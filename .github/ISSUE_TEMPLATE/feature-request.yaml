@@ -11,3 +11,5 @@ body:
         What do you think it would be cool to add*
   - type: textarea
     id: new-feature
+    validations:
+      required: true
