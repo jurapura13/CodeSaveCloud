@@ -13,5 +13,6 @@ body:
     id: new-feature
     attributes:
       label: What happened?
+      value: ""
     validations:
       required: true
