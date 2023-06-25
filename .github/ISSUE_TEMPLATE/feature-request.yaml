@@ -13,6 +13,6 @@ body:
     id: new-feature
     attributes:
       label: What happened?
-      value: ""
+      value: "A bug happened!"
     validations:
       required: true
