@@ -1,6 +1,6 @@
 name: Request a feature
 description: Request a feature
-title: ""
+title: "Feature name:"
 labels: ["enhancement"]
 assignees:
   - octocat
