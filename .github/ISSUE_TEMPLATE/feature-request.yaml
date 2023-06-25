@@ -1,6 +1,6 @@
 name: Request a feature
 description: Request a feature
-title: "[enhancement]: "
+title: ""
 labels: ["enhancement"]
 assignees:
   - octocat
@@ -13,7 +13,5 @@ body:
     id: new-feature
     attributes:
       label: What happened?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
     validations:
       required: true
