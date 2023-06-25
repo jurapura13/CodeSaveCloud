@@ -1,3 +1,3 @@
 # CodeSave Cloud Docs
 
-Wellcome to the official documentation of Codesave Docs
+Welcome to the official documentation of Codesave Docs
