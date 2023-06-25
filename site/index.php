@@ -5,5 +5,5 @@ $title = "";
 include "assets/html/head.php";
 ?>
 <?php
-cc
+
 ?>
