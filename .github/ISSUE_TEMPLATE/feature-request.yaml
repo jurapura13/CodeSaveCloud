@@ -6,5 +6,7 @@ assignees:
 body:
   - type: textarea
     id: new-feature
+    attributes:
+      label: 
     validations:
       required: true
