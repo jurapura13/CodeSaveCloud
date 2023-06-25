@@ -1,12 +1,10 @@
 name: Request a feature
-description: Suggest a New Feature for Consideration
+description: Suggest a new feature for consideration
 labels: ["enhancement"]
 assignees:
   - octocat
 body:
   - type: textarea
     id: new-feature
-    attributes:
-      label: Remember to be descriptive
     validations:
       required: true
