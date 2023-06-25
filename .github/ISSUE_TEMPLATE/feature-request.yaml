@@ -12,7 +12,6 @@ body:
   - type: textarea
     id: new-feature
     attributes:
-      label: What happened?
-      value: "A bug happened!"
+      label: Remember to be descriptive
     validations:
       required: true
