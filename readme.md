@@ -37,4 +37,4 @@ This project is licensed under the [MIT License](LICENSE).
 - [@rukavinaet](https://www.github.com/rukavinaet)
 - [@jurapura13](https://www.github.com/jurapura13)
 
-![example workflow](https://github.com/rukavinaet/codesave/actions/workflows/deploy.yml/badge.svg)
+![example workflow](https://github.com/rukavinaet/CodeSaveCloud/actions/workflows/deploy.yml/badge.svg)
