@@ -7,6 +7,6 @@ body:
   - type: textarea
     id: new-feature
     attributes:
-      label: New feature request
+      label: New feature request;
     validations:
       required: true
