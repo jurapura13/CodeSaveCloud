@@ -1,0 +1,20 @@
+name: Request a feature
+description: Request a feature
+title: "[Feature request]: "
+labels: ["feature"]
+assignees:
+  - octocat
+body:
+  - type: markdown
+    attributes:
+      value: |
+        What do you think it would be cool to add*
+  - type: textarea
+    id: new-feature
+    attributes:
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
+    validations:
+      required: true
