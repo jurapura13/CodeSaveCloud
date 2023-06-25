@@ -1,3 +1,5 @@
+# Changelog
+
 ## pre-alpha-nopublic 2 (2023-06-24)
 - Introduced the relationship between login and no-login functionality.
 - Introducing new worker classes: "ns" and "c" types.
