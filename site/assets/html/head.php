@@ -1,13 +1,16 @@
 <?php
+//define url; dev or prod
 define('URL', 'https://localhost/repositories/CodeSave/site/');
+//define('URL', 'https://codesave.cloud/');
+
 if(!$shownologin){
-    //check if the website can show without login
+    //check if the page can show without login session
     session_start();
     if(!isset($_SESSION["login"])){
         header("Location: ".URL."login");
     }
 }
-
+//generate site title
 $title = ($title != "") ? $title . " | CodeSave Cloud" : "CodeSave Cloud";
 
 ?>

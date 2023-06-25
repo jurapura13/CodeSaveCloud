@@ -1,40 +1,45 @@
 <?php
 
 /**
- * Client namespace
- * @author Emanuel Tin Rukavina, rukavinaet
+ * User namespace
+ * @author Emanuel Tin Rukavina, @rukavinaet
  * 
- * This namespace deals with everything related to user (client) - db / sys relationships
+ * This namespace deals with everything related to user - db / sys relationships
  */
 
-namespace Client;
+namespace User;
 
-class RegisterClient
+class RegisterUser
 {
     function CheckUsername($usernameToCheck)
     {
+        //TODO Make a private "return" function for "span" returns 
         include "../../../config.php";
         if (strlen($usernameToCheck) < 5) {
+            //check if the character count is lower than 5 letter
             echo '<span style="color:#ff4747;">codesave.cloud/' . $usernameToCheck . ' <br><i class="bi bi-info-circle"></i> Too short</span>';
             exit();
         }
         if (strlen($usernameToCheck) > 25) {
+            //check if the character count is higher than 25 letter
             echo '<span style="color:#ff4747;">codesave.cloud/' . $usernameToCheck . ' <br><i class="bi bi-info-circle"></i> Too long</span>';
             exit();
         }
         if (preg_match('/[\'^£$%&*()}{@#~?><>,|=_+¬-]/', $usernameToCheck)) {
+            //check for special chars
             echo '<span style="color:#ff4747;">codesave.cloud/' . $usernameToCheck . '  <br><i class="bi bi-info-circle"></i> Do not include special characters</span>';
             exit();
         }
         $reserve = array("explore", "privacy", "support", "uncuni", "codesave", "codesavecloud", "collection", "collections");
         if (in_array($usernameToCheck, $reserve)) {
+            //check for reserved words
             echo '<span style="color:#ff4747;">codesave.cloud/' . $usernameToCheck . '  <br><i class="bi bi-dash-circle"></i> Username not avaliable</span>';
             exit();
         } 
         if ($stmt = $conn->prepare('SELECT Username FROM `Users` WHERE Username = ?')) {
+            //check if the username exists
             $stmt->bind_param('s', $usernameToCheck);
             $stmt->execute();
-            // Store the result so we can check if the account exists in the database.
             $stmt->store_result();
             $stmt->bind_result($usernameToCheck);
             $stmt->fetch();
