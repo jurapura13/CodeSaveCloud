@@ -1,6 +1,7 @@
 <?php
 //define url; dev or prod
-define('URL', 'https://localhost/repositories/CodeSave/site/');
+define('URL', 'https://localhost/repositories/CodeSaveCloud/site/');
+
 //define('URL', 'https://codesave.cloud/');
 
 if(!$shownologin){
